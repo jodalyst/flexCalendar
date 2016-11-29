@@ -1,0 +1,181 @@
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+  font-size: 5em;
+}
+h3{
+  font-size: 2em;
+}
+.flex-item a {
+  text-decoration: none;
+  /*display: block;*/
+  /*padding: 1em;*/
+  color: white;
+}
+
+.flex-item a:hover {
+  background: palegoldenrod;
+  color: yellowgreen;
+}
+
+.content{
+  padding: 20px 12% 20px 120px;
+}
+
+
+
+ul {list-style-type: none;}
+
+/* Month header */
+.month {
+    /*padding: 70px 25px;*/
+    /*width: 100%;*/
+  background: slateblue;
+  padding: 10px 0px 10px 0px;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+.month * {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    background: slateblue;
+        border: none;
+    padding: 10px;
+}
+.month .prev:hover {
+    color:slateblue;
+    background:white;
+    border-radius:50%;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    background: slateblue;
+    border: none;
+    padding: 10px;
+}
+.month .next:hover {
+    color:slateblue;
+    background:white;
+    border-radius:50%;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+          display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.weekdays div {
+    display: inline-block;
+    width: 14.28%;
+    color: #666;
+    text-align: center;
+}
+
+/*Object containing all days*/
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+
+}
+
+/*.days div {
+    list-style-type: none;
+    display: inline-block;
+    width: 14.28%;
+    height: 60px;
+    text-align: center;
+    font-size:12px;
+    color:#777;
+}*/
+.days .week{
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.days> div:first-of-type{
+    justify-content: flex-end;
+}
+.days> div:last-of-type{
+    justify-content: flex-start;
+}
+.week div{
+    list-style-type: none;
+    display: inline-block;
+    width: 14.28%;
+    height: 60px;
+    /*text-align: center;*/
+    font-size:12px;
+    color:#777; 
+}
+
+
+.week .day div:hover {
+    color:white;
+    background:slateblue;
+}
+
+.week .day div {
+  background: #eee;
+  color:#777;
+  width:100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
